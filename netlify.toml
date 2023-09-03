@@ -1,0 +1,10 @@
+[build]
+  publish = "dist/"
+  command = "npm run build"
+
+[[headers]]
+  for = "/_astro/*"
+
+  [headers.values]
+    # Assets include checksum in the name, so we cache them for long
+    Cache-Control = "public, max-age=31536000"

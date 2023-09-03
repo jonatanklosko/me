@@ -1,0 +1,130 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Paragraph from "../components/Paragraph.astro";
+import Link from "../components/Link.astro";
+import Pager from "../components/Pager.astro";
+import Header from "../components/Header.astro";
+import List from "../components/List.astro";
+import ListItem from "../components/ListItem.astro";
+---
+
+<Layout>
+  <Header />
+  <Paragraph>Hey,</Paragraph>
+  <Paragraph>
+    Happy to be writing to you, I hope I find you in a positive state of mind.
+  </Paragraph>
+  <Paragraph>
+    My name is Jonatan, I love drinking tea, watching cats, writing code and
+    solving the Rubik's Cube.
+  </Paragraph>
+  <Paragraph>Why?</Paragraph>
+  <Paragraph>
+    Tea is warm, meaning it has high thermal energy. Ever wondered how? Well, it
+    all starts on the Sun, where the gravity is so strong that it causes
+    hydrogen particles to bump into one another and during some of these
+    collisions the particles merge and form a bigger one - helium. As part of
+    this process energy is produced in the form of electromagnetic radiation
+    (heat). This radiation is in fact a group of energy particles called photons
+    and it travels 149,597,870 kilometers to reach the planet Earth. Humans
+    figured many ways to turn this energy into electric power, we call those
+    inventions power stations. I bet solar panels is the first thing that you
+    just thought of, but let's take coal as a less obvious example. Coal was
+    formed from dead plants decaying into the soil and those plants stored
+    energy obtained directly from the solar radiation in the process of
+    photosynthesis. In a power station, coal is burnt to heat water, turning it
+    into steam. Next, the steam flows into a turbine making it spin, which also
+    spins a connected power generator. Once the energy is in the form of
+    electric power, it is transmitted to your house via special lines and powers
+    your kettle, which job is to transform the electric energy into increased
+    thermal energy of your water. Finally, the tea you drink has a way higher
+    temperature than your body and the system wants to reach thermal
+    equilibrium, so heat is transferred, giving you the sensation of getting
+    warmer. All that said, I just like the taste, which is entirely subjective,
+    as is the experience of life. Nonetheless, this exemplifies that there is
+    wonder even to the most prosaic things, when viewed through the lens of
+    curiosity.
+  </Paragraph>
+  <Paragraph>
+    Cats are beautiful. There is majesty in their movement and wisdom in their
+    face. They seem to be living a simple life, full of calmness and
+    affirmation. Their sole presence makes people feel happier and safer, at
+    least some of them, which by itself is quite extraordinary. One interesting
+    fact about those lovely creatures is that due to their physique they can
+    climb great heights, but find it immensely tough to come back down. There is
+    an inspiration to be drawn from it, that is, we should properly analyze
+    whatever we are approaching, then once we go for it, focus and commit
+    ourselves to the purpose without looking at the alternatives left behind.
+    Again, the relationship to cats is subjective, but there is an inherent
+    beauty to be found in other beings and the universe.
+  </Paragraph>
+  <Paragraph>
+    Code is a form of art. As with any artistic expression, it can manifest
+    astonishing creativity and be aesthetically pleasing. That said, the real
+    value lies in its effects, be it a useful application or a result of a
+    scientific simulation. Code is an amazing tool, capable of empowering people
+    to think wider, achieve greater and live better. This is true for technology
+    in general, the key point is to apply it right. For various reasons it's not
+    always the case, so we should make sure the technology we use positively
+    affects our life, instead of controlling it or causing more suffering. The
+    greater the power, the greater the responsibility.
+  </Paragraph>
+  <Paragraph>
+    Rubik's Cube is a fascinating object. Honestly, the more you get to know the
+    rules behind it, the more interesting it turns out to be. Every solve is
+    different, both in terms of solution and the execution. One may think that
+    once you know the formula, it's just a redundant task lacking in elegancy
+    and creativity. On the contrary, with proper understanding comes a
+    realization that every mixed up Rubik's Cube is like a blank canvas -
+    waiting for an artist to paint the solution.
+  </Paragraph>
+  <Paragraph>
+    I am a pragmatic person, optimistic within the boundaries of realism,
+    focused on the present and looking forward to the future, a fan of logical
+    reasoning, everyday humor, science, peace and persistence.
+  </Paragraph>
+  <Paragraph>
+    If I were to leave you with a single thought, it would be this: whatever
+    happens to us does not define who we are, it's the choices we make that do
+    so.
+  </Paragraph>
+  <Paragraph>
+    I am looking forward to enjoying a cup of tea with you one day.
+  </Paragraph>
+  <Paragraph>
+    Cheers,
+    <br />
+    Jonatan
+  </Paragraph>
+  <Paragraph>---</Paragraph>
+  <div class="my-4 leading-7">
+    <div class="mb-3">Attachments</div>
+    <List>
+      <ListItem>
+        <Link href="/contact">Contact</Link>
+      </ListItem>
+      <ListItem>
+        <Link href="/resume.pdf" data-astro-reload>Resume</Link>
+      </ListItem>
+      <ListItem>
+        <Link href="https://github.com/jonatanklosko" external>
+          GitHub Profile
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link
+          href="https://www.worldcubeassociation.org/persons/2013KOSK01"
+          external
+        >
+          Cubing Competitor Profile
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link href="https://youtu.be/ulLhBTyrc0g?t=89" external>
+          One of My Official Rubik's Cube Solves
+        </Link>
+      </ListItem>
+    </List>
+  </div>
+  <Pager nextHref="/humans" nextTitle="Humans" />
+</Layout>
