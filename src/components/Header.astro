@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import meImage from "../images/me.jpg";
+---
+
+<header class="pb-16 flex flex-col items-center">
+  <Image src={meImage} alt="" class="h-64 w-64 rounded-full" loading="eager" />
+  <div class="mt-8 text-4xl">Jonatan Kłosko</div>
+  <div class="mt-3 text-center">
+    (that's me and you ended up on my personal website)
+  </div>
+</header>
