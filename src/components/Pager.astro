@@ -1,0 +1,30 @@
+---
+import Link from "./Link.astro";
+
+interface Props {
+  prevHref?: string;
+  prevTitle?: string;
+  nextHref?: string;
+  nextTitle?: string;
+}
+
+const { prevHref, prevTitle, nextHref, nextTitle } = Astro.props;
+---
+
+<nav class="mt-8 flex">
+  {
+    prevHref && (
+      <div>
+        ← <Link href={prevHref}>{prevTitle}</Link>
+      </div>
+    )
+  }
+  <div class="grow"></div>
+  {
+    nextHref && (
+      <div>
+        <Link href={nextHref}>{nextTitle}</Link> →
+      </div>
+    )
+  }
+</nav>

@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import Paragraph from "../components/Paragraph.astro";
+import Pager from "../components/Pager.astro";
+---
+
+<Layout>
+  <Heading level={1}>Humans</Heading>
+  <Paragraph>
+    Every human being has something to learn from, here are a few I love.
+  </Paragraph>
+  <Paragraph>
+    Lex Fridman, for his relentless exploration of the human condition and
+    bringing countless hours of insightful conversations into the world.
+  </Paragraph>
+  <Paragraph>
+    Ed Sheeran, for showing that hard work can get you anywhere and being an
+    absolute master in his craft of songwriting and, above all, performing.
+  </Paragraph>
+  <Paragraph>
+    Kobe Bryant, for embodying unparalleled dedication. Also, for showing that
+    when you put a dot after a great story, it is up to you to write the next
+    chapter.
+  </Paragraph>
+  <Paragraph>
+    Hasan Minhaj, for being a hilarious storyteller and the reason for numerous
+    laughs.
+  </Paragraph>
+  <Paragraph>
+    Elon Musk, for coming up with ridiculous ideas and then actually making them
+    happen.
+  </Paragraph>
+  <Paragraph>
+    Neil deGrasse Tyson, for manifesting the beauty of science, logical
+    reasoning and the universe.
+  </Paragraph>
+  <Paragraph>&lt;3</Paragraph>
+  <Pager
+    prevHref="/"
+    prevTitle="Me"
+    nextHref="/inspiration"
+    nextTitle="Inspiration"
+  />
+</Layout>
